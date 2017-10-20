@@ -8,12 +8,13 @@ for (let key in HomeInventory) {
         var item = currentType[i];
         
         inventoryEl.innerHTML += `
-        <section class="${key} section">
+        <section class="${key}"> 
             <h2>${item.name}</h2>
             <p class="${key}_location">
             Location: ${item.location} </p>
             <p class="${key}_description">
             Description: ${item.description} </p>
+        </section>
         `
     }
 
